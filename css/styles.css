@@ -6,24 +6,32 @@ body {
     font-family: 'Times New Roman';
 }
 
+h1 {
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    font-weight: bolder;
+}
+
+h3 {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #19D3DA;
+}
+
 
 /* Styling the header*/
 .header {
     background: linear-gradient(#373A40, #686D76);
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .header > img {
     position: relative;
     height : 100px;
     width: auto;
-}
-
-.header > h1 {
-    font-size: 50px;
-    font-family: Courier New;
-    color: white;
 }
 
 /* Styling the body*/
@@ -61,6 +69,12 @@ body {
     font-size: 20px;
 }
 
+.footer {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
 
 /* Utilities*/
 button { 

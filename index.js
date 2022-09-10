@@ -2,14 +2,14 @@
 const name = document.querySelector('[name="name"]');
 let img_src = "https://dog.ceo/api/breeds/image/random";
 
-
+// creates paragraph tags and adds texts to them
 const creatingTags = (text,id) => {
     let tag = document.createElement("p");
     tag.appendChild(text);
     const element = document.getElementById(id);
     element.appendChild(tag);
 }
-
+// fetches the dog picture randomly
 const picture = () => {
     fetch("https://dog.ceo/api/breeds/image/random")
     .then((response) => response.json())
