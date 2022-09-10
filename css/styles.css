@@ -47,18 +47,18 @@ h3 {
 .body {
     position: relative;
     display: flex;
+    display: flex;
     padding: 2vw 10vw;
 }
 
 .container {
-    position:relative;
+    position: relative;
+    margin-right: 2vw;
 }
 
 .user-input {
     position:relative;
-    display: flex;
     width: 80%;
-    justify-content: space-between;
     align-items: center;
 }
 /* Styling the input */
@@ -74,21 +74,10 @@ h3 {
 
 .box {
     position: relative;
-    width: 40%;
-    margin-right: 2vw;
-}
-
-.box-picture {
-    position: relative;
+    width: 30%;
     display: flex;
-    justify-content: center;
-    justify-items: center;
-}
-
-.box-picture > img {
-    border-radius: 50px;
-    max-width: 100%;
-    max-height: 80vh;
+    justify-content: right;
+    align-items: flex-start;
 }
 
 .container,user-input > p {
@@ -97,12 +86,24 @@ h3 {
     font-size: 20px;
 }
 
+.album {
+    position: relative;
+    display: flex;
+}
+
 .footer {
     position: relative;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding: 0vw 10vw 0vw 0vw;
+}
+
+.answers {
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vw;
 }
 
 /* Utilities*/

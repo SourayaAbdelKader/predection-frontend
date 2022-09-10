@@ -14,7 +14,7 @@ const picture = () => {
     fetch("https://dog.ceo/api/breeds/image/random")
     .then((response) => response.json())
     .then((data) => {
-        let div = document.getElementById("api-pictue");
+        let div = document.getElementById("picture");
         img = document.createElement("img")
         img.setAttribute("src", data.message);
         img.setAttribute("alt", "Dog"); 
@@ -70,6 +70,7 @@ userGender("ahmad")
 userAge("ahmad")
 userNationality("ahmad")
 picture()
+
 
 
 
