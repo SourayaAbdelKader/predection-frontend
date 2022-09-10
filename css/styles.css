@@ -2,20 +2,22 @@ body {
     width: 100%;
     padding: 0%;
     margin: 0%;
-    background-color: beige;
+    background-color: #EEEEEE;
+    font-family: 'Times New Roman';
 }
 
 
 /* Styling the header*/
 .header {
-    background: linear-gradient(rgb(46, 46, 95), rgb(136, 137, 230));
+    background: linear-gradient(#373A40, #686D76);
     display: flex;
+    align-items: center;
 }
 
 .header > img {
     position: relative;
-    width : 50px;
-    height : auto;
+    height : 100px;
+    width: auto;
 }
 
 .header > h1 {
@@ -45,12 +47,27 @@ body {
     padding: 1vh 2vh;
 }
 
+.box-picture {
+    position: relative;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.container,user-inpu > p {
+    position: relative;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
 /* Utilities*/
 button { 
     height: 3vw;
     width: 6vw;
     position: relative;
-    background-color:  rgb(136, 137, 230);
+    background-color:#19D3DA;
     border-radius: 25px;
     border: 0cm;
     color:white;
