@@ -1,6 +1,7 @@
 // Defining variables
-const name = document.querySelector('[name="name"]');
-let img_src = "https://dog.ceo/api/breeds/image/random";
+const name = document.querySelector('[name="button"]');
+const button = document.getElementById("button");
+let button = False;
 
 // creates paragraph tags and adds texts to them
 const creatingTags = (text,id) => {
@@ -62,19 +63,26 @@ const userNationality = (name) => {
                 const element = document.getElementById("user-nationality");
                 element.appendChild(box);
             });
-        } else {text = document.createTextNode("No idea!")};
+        } else {text = document.createTextNode("No idea!");
+            let box = document.createElement("div");
+            let tag = document.createElement("p");    
+            tag.appendChild(text);
+            box.appendChild(tag);
+            const element = document.getElementById("user-nationality");
+            element.appendChild(box);
+    };
     });
 };
 
-userGender("ahmad")
-userAge("ahmad")
-userNationality("ahmad")
-picture()
+for (let i=0; i<6; i++){
+    picture()
+}
 
 
 
-
-
-
-
-
+button.addEventListener("click", () => {
+    userGender(name)
+    userAge(name)
+    userNationality(name)
+})
+    

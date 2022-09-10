@@ -1,4 +1,9 @@
 body {
+    background: url("/images/R.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
     width: 100%;
     padding: 0%;
     margin: 0%;
@@ -68,13 +73,16 @@ h3 {
     border-top: 0cm;
     border-left: 0cm;
     border-right: 0cm;
-    height: 2vw;
-    width: 15vw;
+    height: 50px;
+    width: 300px;
+    color: #686D76;
+    font-size: 15px;
+    margin-right: 5vh;
 }
 
 .box {
     position: relative;
-    width: 30%;
+    width: 40%;
     display: flex;
     justify-content: right;
     align-items: flex-start;
@@ -91,6 +99,27 @@ h3 {
     display: flex;
 }
 
+.answers {
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vw;
+}
+
+.box-picture {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-picture > img {
+    min-width: 50%;
+    min-height: 50%;
+    max-width: 50%;
+    max-height: 50%;
+}
+
+
 .footer {
     position: relative;
     display: flex;
@@ -99,24 +128,18 @@ h3 {
     padding: 0vw 10vw 0vw 0vw;
 }
 
-.answers {
-    position:relative;
-    display: flex;
-    flex-direction: column;
-    margin-top: 3vw;
-}
-
 /* Utilities*/
 button { 
-    height: 3vw;
-    width: 6vw;
+    height: 50px;
+    width: 200px;
     position: relative;
     background-color:#19D3DA;
     border-radius: 25px;
-    border: 0cm;
+    border: #19D3DA;
     color:white;
     font-weight: bold;
     font-family: 'Times New Roman';
-    font-size: 15px;
-    padding: 1vh 2vh;
+    font-size: 20px;
+    padding: 1vh 1vh;
+    cursor: pointer;
 }
