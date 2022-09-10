@@ -18,7 +18,7 @@ const picture = () => {
         img = document.createElement("img")
         img.setAttribute("src", data.message);
         img.setAttribute("alt", "Dog"); 
-        div.appendChild(img)  
+        div.appendChild(img);
     })
 }
 

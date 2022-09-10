@@ -3,7 +3,8 @@ body {
     padding: 0%;
     margin: 0%;
     background-color: #EEEEEE;
-    font-family: 'Times New Roman';
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#686D76 ;
 }
 
 h1 {
@@ -11,6 +12,14 @@ h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;
     font-weight: bolder;
+}
+
+h2 {
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:#19D3DA;
+    font-weight: bold;
+    line-height: 5vh;
 }
 
 h3 {
@@ -30,18 +39,25 @@ h3 {
 
 .header > img {
     position: relative;
-    height : 100px;
+    height : 5vw;
     width: auto;
 }
 
 /* Styling the body*/
 .body {
+    position: relative;
     display: flex;
+    padding: 2vw 10vw;
+}
+
+.container {
+    position:relative;
 }
 
 .user-input {
     position:relative;
     display: flex;
+    width: 80%;
     justify-content: space-between;
     align-items: center;
 }
@@ -49,21 +65,33 @@ h3 {
 .user-input > input {
     background-color: transparent;
     position: relative;
-    border-radius: 25px;
+    border-top: 0cm;
+    border-left: 0cm;
+    border-right: 0cm;
     height: 2vw;
     width: 15vw;
-    padding: 1vh 2vh;
+}
+
+.box {
+    position: relative;
+    width: 40%;
+    margin-right: 2vw;
 }
 
 .box-picture {
     position: relative;
-    width: 40%;
     display: flex;
     justify-content: center;
     justify-items: center;
 }
 
-.container,user-inpu > p {
+.box-picture > img {
+    border-radius: 50px;
+    max-width: 100%;
+    max-height: 80vh;
+}
+
+.container,user-input > p {
     position: relative;
     font-weight: bold;
     font-size: 20px;
@@ -74,6 +102,7 @@ h3 {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    padding: 0vw 10vw 0vw 0vw;
 }
 
 /* Utilities*/
