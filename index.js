@@ -14,13 +14,11 @@ const picture = () => {
     fetch("https://dog.ceo/api/breeds/image/random")
     .then((response) => response.json())
     .then((data) => {
-        console.log(data.message);
-        console.log(typeof(data.message));
-        //let div = document.getElementById("api-pictue");
-        //img = document.createElement("img")
-        //img.setAttribute("src", JSON.stringify(data.message));
-        //img.setAttribute("alt", "Dog"); 
-        //div.appendChild(img)  
+        let div = document.getElementById("api-pictue");
+        img = document.createElement("img")
+        img.setAttribute("src", data.message);
+        img.setAttribute("alt", "Dog"); 
+        div.appendChild(img)  
     })
 }
 
