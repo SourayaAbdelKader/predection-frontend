@@ -1,0 +1,61 @@
+body {
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+    background-color: beige;
+}
+
+
+/* Styling the header*/
+.header {
+    background: linear-gradient(rgb(46, 46, 95), rgb(136, 137, 230));
+    display: flex;
+}
+
+.header > img {
+    position: relative;
+    width : 50px;
+    height : auto;
+}
+
+.header > h1 {
+    font-size: 50px;
+    font-family: Courier New;
+    color: white;
+}
+
+/* Styling the body*/
+.body {
+    display: flex;
+}
+
+.user-input {
+    position:relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Styling the input */
+.user-input > input {
+    background-color: transparent;
+    position: relative;
+    border-radius: 25px;
+    height: 2vw;
+    width: 15vw;
+    padding: 1vh 2vh;
+}
+
+/* Utilities*/
+button { 
+    height: 3vw;
+    width: 6vw;
+    position: relative;
+    background-color:  rgb(136, 137, 230);
+    border-radius: 25px;
+    border: 0cm;
+    color:white;
+    font-weight: bold;
+    font-family: 'Times New Roman';
+    font-size: 15px;
+    padding: 1vh 2vh;
+}
