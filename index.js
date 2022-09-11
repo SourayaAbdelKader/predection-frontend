@@ -1,7 +1,5 @@
 // Defining variables
-const name = document.querySelector('[name="button"]');
 const button = document.getElementById("button");
-let button = False;
 
 // creates paragraph tags and adds texts to them
 const creatingTags = (text,id) => {
@@ -51,9 +49,9 @@ const userNationality = (name) => {
     .then((response) => response.json())
     .then((data) => {
         user_nationality = data.country;
-        if (user_nationality) {
-            text = document.createTextNode( "Nationality : ");
-            creatingTags(text,"user-nationality")
+        text = document.createTextNode( "Nationality : ");
+        creatingTags(text,"user-nationality")
+        if (user_nationality.length != 0) {
             user_nationality.forEach(item => {
                 let box = document.createElement("div");
                 let tag = document.createElement("p");
@@ -63,26 +61,29 @@ const userNationality = (name) => {
                 const element = document.getElementById("user-nationality");
                 element.appendChild(box);
             });
-        } else {text = document.createTextNode("No idea!");
-            let box = document.createElement("div");
-            let tag = document.createElement("p");    
-            tag.appendChild(text);
-            box.appendChild(tag);
-            const element = document.getElementById("user-nationality");
-            element.appendChild(box);
+        } else {answer = document.createTextNode("No idea!");
+            let element = document.getElementById("user-nationality");
+            element.appendChild(answer);
     };
     });
 };
 
+let start = false;
 for (let i=0; i<6; i++){
     picture()
 }
 
-
-
 button.addEventListener("click", () => {
-    userGender(name)
-    userAge(name)
-    userNationality(name)
-})
+    let user_name = document.getElementById("user_name").value;
+    start = !start;
+    if (start) {
+        if (user_name.length > 0) {
+        userGender(user_name);
+        userAge(user_name);
+        userNationality(user_name);
+        start ="false";}    
+    } else {window.location.reload()}
+});
+
+
     
