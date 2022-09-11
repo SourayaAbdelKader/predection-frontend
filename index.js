@@ -67,12 +67,11 @@ const userNationality = (name) => {
 };
 
 // retrieving results
-
-// Defining variable
+clicked = 0;
 const button = document.getElementById("button");
 const reset = document.getElementById("reset");
 
-let start = false;
+
 for (let i=0; i<4; i++){
     picture()
 };
@@ -83,8 +82,10 @@ button.addEventListener("click", () => {
         userGender(user_name);
         userAge(user_name);
         userNationality(user_name);
-    }})
+    }
+})
 
+// create the reset button for a better switching between submitting the input and reloading the page
 reset.addEventListener("click", () => {
     window.location.reload()
 });
