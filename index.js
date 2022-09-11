@@ -70,22 +70,23 @@ const userNationality = (name) => {
 
 // Defining variable
 const button = document.getElementById("button");
+const reset = document.getElementById("reset");
 
 let start = false;
 for (let i=0; i<4; i++){
     picture()
-}
+};
 
 button.addEventListener("click", () => {
     let user_name = document.getElementById("user_name").value;
-    start = !start;
-    if (start) {
-        if (user_name.length > 0) {
+    if (user_name.length > 0) {
         userGender(user_name);
         userAge(user_name);
         userNationality(user_name);
-        start ="false";}    
-    } else {window.location.reload()}
+    }})
+
+reset.addEventListener("click", () => {
+    window.location.reload()
 });
 
 
