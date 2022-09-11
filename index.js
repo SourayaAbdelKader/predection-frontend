@@ -1,6 +1,4 @@
-// Defining variables
-const button = document.getElementById("button");
-
+//functions
 // creates paragraph tags and adds texts to them
 const creatingTags = (text,id) => {
     let tag = document.createElement("p");
@@ -68,8 +66,13 @@ const userNationality = (name) => {
     });
 };
 
+// retrieving results
+
+// Defining variable
+const button = document.getElementById("button");
+
 let start = false;
-for (let i=0; i<6; i++){
+for (let i=0; i<4; i++){
     picture()
 }
 

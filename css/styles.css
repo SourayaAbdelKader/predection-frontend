@@ -1,7 +1,8 @@
 body {
+    background-image: url("/images/R.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center;
     width: 100%;
     padding: 0%;
     margin: 0%;
@@ -42,7 +43,7 @@ h3 {
 
 .header > img {
     position: relative;
-    height : 5vw;
+    height : 10vw;
     width: auto;
 }
 
@@ -56,13 +57,11 @@ h3 {
 
 .container {
     position: relative;
-    margin-right: 2vw;
 }
 
 .user-input {
     position:relative;
     width: 80%;
-    align-items: center;
 }
 /* Styling the input */
 .user-input > input {
@@ -76,6 +75,7 @@ h3 {
     color: #686D76;
     font-size: 15px;
     margin-right: 5vh;
+    margin-bottom: 2vh;
 }
 
 .box {
@@ -89,7 +89,7 @@ h3 {
 .container,user-input > p {
     position: relative;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .album {
@@ -101,7 +101,6 @@ h3 {
     position:relative;
     display: flex;
     flex-direction: column;
-    margin-top: 3vw;
 }
 
 .box-picture {
@@ -137,7 +136,21 @@ button {
     color:white;
     font-weight: bold;
     font-family: 'Times New Roman';
-    font-size: 20px;
+    font-size: 15px;
     padding: 1vh 1vh;
     cursor: pointer;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 930px) {
+    .mobile {
+      flex-direction: column-reverse;
+    }
+  
+    .media-images {
+      width: 100%;
+      max-height: 50%;
+    }
+
 }
