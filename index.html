@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title> Un-anonymous</title>
+        <link rel="stylesheet" href="/css/styles.css" />
+        <link rel="icon" " href="/images/black.png" />
+    </head>
+    <body>
+        <div class="header">
+            <img src="/images/Picture1.png">
+            <h1> Un-anonymous </h1>
+            <div></div>
+        </div>
+        <div class="body mobile">
+            <div class="container">
+                <div class="user-input">
+                    <h2> Enter any name and we will predict the gender, the age and the nationality! </h2>
+                    <p> Name: </p>
+                    <input id="user_name" type="text" placeholder="Type your name here..."></input>
+                    <div class="buttons mobile"> 
+                    <button id="button" type="button" name="button"> Submit </button>
+                    <button id="reset" type="button" name="button"> Reset </button>
+                    </div>
+                </div>
+                <div class="answers">
+                    <h2> Results </h2>
+                    <div id="user-gender" class="gender"> </div>
+                    <div id="user-age" class="age"> </div>
+                    <div id="user-nationality" class="nationality"></div>
+                </div>
+            </div>
+            <div class="box media-images">
+                <div id="picture" class="box-picture"></div>
+            </div>
+        </div>
+        </div>
+        <div class=footer> <h3> We already know who are you 🕵️ </h3> </div>
+        <script src="/index.js"></script>
+    </body>
+</html>

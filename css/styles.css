@@ -1,0 +1,163 @@
+body {
+    background-image: url("/images/R.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#373A40;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    font-weight: bolder;
+}
+
+h2 {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:#2fbdc2;
+    font-weight: bold;
+    line-height: 5vh;
+}
+
+h3 {
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #2fbdc2;
+}
+
+
+/* Styling the header*/
+.header {
+    background: linear-gradient(#373A40, #686D76);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header > img {
+    position: relative;
+    height : 10vw;
+    width: auto;
+}
+
+/* Styling the body*/
+.body {
+    position: relative;
+    display: flex;
+    display: flex;
+    padding: 2vw 5vw;
+}
+
+.container {
+    position: relative;
+}
+
+.user-input {
+    position:relative;
+    width: 80%;
+}
+/* Styling the input */
+.user-input > input {
+    background-color: transparent;
+    position: relative;
+    border-top: 0cm;
+    border-left: 0cm;
+    border-right: 0cm;
+    height: 50px;
+    width: 300px;
+    color: #686D76;
+    font-size: 15px;
+    margin-right: 5vh;
+    margin-bottom: 2vh;
+}
+
+.buttons {
+    position: relative;
+    display: flex;
+}
+
+.buttons > button {
+    margin-right: 1vw;
+    margin-top: 1vw;
+}
+
+.box {
+    position: relative;
+    width: 40%;
+    display: flex;
+    justify-content: right;
+    align-items: flex-start;
+}
+
+.container,user-input > p {
+    position: relative;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.album {
+    position: relative;
+    display: flex;
+}
+
+.answers {
+    position:relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.box-picture {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-picture > img {
+    min-width: 50%;
+    min-height: 50%;
+    max-width: 50%;
+    max-height: 50%;
+}
+
+.footer {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0vw 10vw 0vw 0vw;
+}
+
+/* Utilities*/
+button { 
+    height: 40px;
+    width: 150px;
+    position: relative;
+    background-color:#2fbdc2;
+    border-radius: 25px;
+    border: #2fbdc2;
+    color:white;
+    font-weight: bold;
+    font-family: 'Times New Roman';
+    font-size: 15px;
+    padding: 1vh 1vh;
+    cursor: pointer;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 930px) {
+    .mobile {
+      flex-direction: column-reverse;
+    }
+  
+    .media-images {
+      width: 100%;
+      max-height: 50%;
+    }
+}
