@@ -5,10 +5,33 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title> Un-anonymous</title>
-        <link rel="stylesheet" href="/css/styles.css" />
+        <link rel="stylesheet" href="./css/styles.css" />
         <link rel="icon" " href="/images/black.png" />
     </head>
     <body>
+        <div id="popupbox"> 
+            <center > 
+                <form name="login" method="post">
+                    <div class="user-input">
+                        <h2> Username: </h2>
+                        <input id="username" name="username"/>
+                    </div>
+                    <div class="user-input">
+                        <h2> Password: </h2>
+                        <input id="password" name="password" type="password"/>
+                    </div>
+                    <div>
+                        <ps> Have an account? </p>
+                        <input id="log_in" class="button" type="submit" name="sign_in" value="Login" />
+                        <p> New to here? </p>
+                        <input id="signup" class="button" type="submit" name="sign_up" value="Sign Up" />
+                    </div>
+                </form>
+                <div> 
+                    <a href="javascript:login('hide');">close</a>
+                </div>
+            </center>
+        </div> 
         <div class="header">
             <img src="/images/Picture1.png">
             <h1> Un-anonymous </h1>

@@ -66,6 +66,35 @@ const userNationality = (name) => {
     });
 };
 
+
+// In the following section, I was trying to create a login, sign up pop up, but there is an error I couldn't fix on time
+/*
+function login(showhide){
+    if(showhide == "show"){
+        document.getElementById('popupbox').style.visibility="visible";
+    }else if(showhide == "hide"){
+        document.getElementById('popupbox').style.visibility="hidden"; 
+    }
+}
+
+login("show");
+const username = document.getElementById("username").value;
+const password = document.getElementById("password").value;
+const login = getElementById("log_in");
+
+login.addEventListener("click", () =>{
+    if (localStorage.getItem(username)){
+            if (password = localStorage.getItem(username)){
+                login("hide");
+    }};
+});
+
+const signup = getElementById("signup");
+signup.addEventListener("click", () =>{
+    localStorage.setItem(username, password);
+    login("hide")
+});*/
+
 // retrieving results
 clicked = 0;
 const button = document.getElementById("button");
@@ -89,6 +118,3 @@ button.addEventListener("click", () => {
 reset.addEventListener("click", () => {
     window.location.reload()
 });
-
-
-    
