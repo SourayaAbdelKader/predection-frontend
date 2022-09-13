@@ -17,13 +17,17 @@ const picture = () => {
         img.setAttribute("alt", "Dog"); 
         div.appendChild(img);
     })
-}
+    .catch(error => {
+        element.parentElement.innerHTML = `Error: ${error}`;
+        console.error('There was an error!', error);
+    });
+};
 
 const userGender = (name) => {
     fetch("https://api.genderize.io/?name="+name)
     .then((response) => response.json())
     .then((data) => {
-        user_gender = data.gender;
+        let user_gender = data.gender;
         probability = data.probability;
         if (user_gender) {text = document.createTextNode("Gender : " + user_gender.charAt(0).toUpperCase() + user_gender.slice(1) + " " + probability*100 + "%");}
         else {text = document.createTextNode("Gender : No idea!")} 
@@ -35,7 +39,7 @@ const userAge = (name) => {
     fetch("https://api.agify.io/?name="+name)
     .then((response) => response.json())
     .then((data) => {
-        user_age = data.age;
+        let user_age = data.age;
         if (user_age) {text = document.createTextNode("Age : "+  user_age);}
         else {text = document.createTextNode("Age : No idea!")};
         creatingTags(text,"user-age");
@@ -46,7 +50,7 @@ const userNationality = (name) => {
     fetch("https://api.nationalize.io/?name="+name)
     .then((response) => response.json())
     .then((data) => {
-        user_nationality = data.country;
+        let user_nationality = data.country;
         text = document.createTextNode( "Nationality : ");
         creatingTags(text,"user-nationality")
         if (user_nationality.length != 0) {
@@ -100,10 +104,9 @@ clicked = 0;
 const button = document.getElementById("button");
 const reset = document.getElementById("reset");
 
-
 for (let i=0; i<4; i++){
-    picture()
-};
+    picture();
+}
 
 button.addEventListener("click", () => {
     let user_name = document.getElementById("user_name").value;
